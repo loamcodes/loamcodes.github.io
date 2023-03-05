@@ -2,34 +2,63 @@
 import Layout from "../layouts/Layout.astro";
 import headline from "../images/headline.svg";
 import mockup from "../images/page-mockup.jpg";
+import shrooms2 from "../images/twoMushrooms.svg";
 ---
 
 <Layout title="Loam | Grow Ambitious Dapps">
-	<main>
+  <main>
     <h2>
       <img src={headline} alt="Loam helps you build ambitious dapps." />
     </h2>
+    <section>
+      <p>
+        Now:
+        <br/>
+        Automatic, gorgeous smart contract explorers for <a href="#">NEAR</a>. Coming soon: <a href="#">CosmWasm</a> and <a href="#">Soroban</a>.
+      </p>
+      <img src={shrooms2} alt="">
+    </section>
     <img src={mockup} alt="" style="width: 100%" />
-	</main>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 0 1.25rem;
-		max-width: 80ch;
-		text-align: center;
-	}
-	h2 {
-    height: 80vh;
+  main {
+    margin: auto;
+    padding: 0 1.25rem;
+    max-width: 80ch;
+  }
+  h2 {
+    height: 45vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     margin: 0;
-	}
+    margin-bottom: 3rem;
+    z-index: 2;
+    position: relative;
+  }
   @media(min-width: 450px) {
     h2 {
       padding: 0 1em;
     }
+  }
+
+  section {
+    --img-height: 473px;
+    --img-width: 235px;
+    display: flex;
+    justify-content: space-between;
+    min-height: var(--img-height);
+    align-items: flex-end;
+  }
+  section p {
+    width: 50%;
+    max-width: 18em;
+    padding-left: 5vw;
+  }
+  section img {
+    width: 42%;
+    max-width: var(--img-width);
   }
 </style>

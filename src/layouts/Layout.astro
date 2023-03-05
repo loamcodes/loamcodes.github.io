@@ -1,6 +1,6 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 import icons from "../images/icons.svg"
 import logo from "../images/LogoWDropShadow.svg";
@@ -10,71 +10,82 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
     <nav>
       <img src={icons} alt="" />
     </nav>
     <h1>
       <img src={logo} alt="LOAM" />
     </h1>
-		<slot />
-	</body>
+    <slot />
+  </body>
 </html>
 <style is:global>
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
-	}
-	html {
-    font-size: 14px;
-		font-family: system-ui, sans-serif;
+  :root {
+    --yellow: rgb(224, 189, 63);
+    --shadow: rgba(66, 82, 57, 0.29);
+    --gray: rgb(162, 157, 173);
+  }
+  html {
+    color: var(--yellow);
+    font-size: 16px;
+    font-family: system-ui, sans-serif;
     background-color: rgb(37, 44, 31);
     background-image: url(../images/mycelium.png);
-    background-size: calc(max(100%, 1920px));
+    background-size: calc(max(100%, 1920px)) 100%;
     background-repeat: no-repeat;
-	}
+    background-attachment: fixed;
+  }
+  a {
+    color: var(--gray);
+    text-decoration: none;
+  }
+  a:focus,
+  a:hover {
+       border-bottom: 1px solid var(--yellow);
+  }
   @media (min-width: 420px) {
     html {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
-	body {
+  body {
     margin: 0;
-	}
+  }
   nav {
-    background-color: rgba(66, 82, 57, 0.29);
+    background-color: var(--shadow);
     display: flex;
     justify-content: flex-end;
-    padding: 1.25em;
+    padding: 1em;
     overflow: visible;
   }
   nav img {
-    height: 2em;
+    height: 1.5em;
   }
-	h1 {
+  h1 {
     --height: 3.25rem;
-		margin: 0;
-		margin-top: calc(-0.5 * var(--height));
+    margin: 0;
+    margin-top: calc(-0.5 * var(--height));
     padding: 0 1.25rem;
-	}
+  }
   h1 img {
     height: var(--height);
   }
   @media(min-width: 420px) {
     h1 {
-      --height: 4rem;
+      --height: 3.75rem;
     }
   }
   @media(min-width: 800px) {
     h1 {
-      --height: 5rem;
+      --height: 4.5rem;
       text-align: center;
     }
   }
