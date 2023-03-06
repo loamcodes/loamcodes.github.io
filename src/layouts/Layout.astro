@@ -2,8 +2,10 @@
 export interface Props {
   title: string;
 }
-import icons from "../images/icons.svg"
 import logo from "../images/LogoWDropShadow.svg";
+import github from "../images/github.svg";
+import discord from "../images/discord.svg";
+import twitter from "../images/twitter.svg";
 
 const { title } = Astro.props;
 ---
@@ -19,7 +21,15 @@ const { title } = Astro.props;
   </head>
   <body>
     <nav>
-      <img src={icons} alt="" />
+      <a href="https://github.com/loambuild">
+        <img src={github} alt="GitHub" />
+      </a>
+      <a href="https://discord.gg/ffAZu9S4yv">
+        <img src={discord} alt="Discord" />
+      </a>
+      <a href="https://twitter.com/raendev">
+        <img src={twitter} alt="Twitter" />
+      </a>
     </nav>
     <h1>
       <img src={logo} alt="LOAM" />
@@ -61,20 +71,24 @@ const { title } = Astro.props;
     margin: 0;
   }
   nav {
-    background-color: var(--shadow);
     display: flex;
     justify-content: flex-end;
     padding: 1em;
     overflow: visible;
   }
   nav img {
-    height: 1.5em;
+    height: 1em;
+  }
+  nav a {
+    opacity: 0.4;
+    margin-left: 0.75em;
+    border-bottom: 1px solid transparent;
   }
   h1 {
     --height: 3.25rem;
     margin: 0;
-    margin-top: calc(-0.5 * var(--height));
     padding: 0 1.25rem;
+    text-align: center;
   }
   h1 img {
     height: var(--height);
@@ -84,10 +98,14 @@ const { title } = Astro.props;
       --height: 3.75rem;
     }
   }
+  @media(min-width: 580px) {
+    h1 {
+      margin-top: calc(-0.5 * var(--height));
+    }
+  }
   @media(min-width: 800px) {
     h1 {
       --height: 4.5rem;
-      text-align: center;
     }
   }
 </style>
