@@ -1,8 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import headline from "../images/headline.svg";
-import mockup from "../images/page-mockup.jpg";
-import shrooms2 from "../images/twoMushrooms.svg";
 ---
 
 <Layout title="Loam | Grow Ambitious Dapps">
@@ -14,7 +12,9 @@ import shrooms2 from "../images/twoMushrooms.svg";
       <p>
         Automatic, gorgeous smart contract explorer <a href="/admin">for NEAR.</a> Coming soon to CosmWasm and Soroban.
       </p>
-      <img src={shrooms2} alt="">
+      <p>
+        Made by <a href="https://AhaLabs.dev">Aha Labs.</a>
+      </p>
     </section>
   </main>
 </Layout>
@@ -24,36 +24,29 @@ import shrooms2 from "../images/twoMushrooms.svg";
     margin: auto;
     padding: 0 1.25rem;
     max-width: 80ch;
-  }
-  h2 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    margin: 5rem 0 7rem;
-    z-index: 2;
-    position: relative;
+    flex: 1;
   }
-  @media(min-width: 450px) {
-    h2 {
-      padding: 0 1em;
-    }
+  h2 {
+    margin: 5rem auto 7rem;
+  }
+  h2 img {
+    width: 30rem;
+    max-width: 100%;
   }
 
   section {
     --img-height: 427px;
     --img-width: 168px;
-    display: flex;
-    justify-content: space-between;
-    min-height: var(--img-height);
-    align-items: flex-start;
-    padding: 0 5vw;
+    background-image: url(../images/twoMushrooms.svg);
+    background-position: top right;
+    background-size: calc(min(20%, var(--img-width)));
+    background-repeat: no-repeat;
+    flex: 1;
   }
   section p {
     width: 66%;
     max-width: 18em;
-  }
-  section img {
-    width: 20%;
-    max-width: var(--img-width);
   }
 </style>
