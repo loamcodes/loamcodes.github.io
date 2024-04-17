@@ -39,7 +39,7 @@ import Why from "./why.md";
     flex: 1;
   }
   h2 {
-    margin: 4rem auto 4rem;
+    margin: 4rem auto 0;
   }
   h2 img {
     width: 30rem;
@@ -62,10 +62,13 @@ import Why from "./why.md";
     margin-bottom: 2rem;
   }
   .intro img {
-    width: calc(min(20%, 168px));
+    width: 25%;
   }
   .intro div {
     width: 66%;
     max-width: 18em;
+  }
+  .intro div p:first-child {
+    margin-top: 4rem;
   }
 </style>
