@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import headline from "../images/headline.svg";
+import twoMushrooms from "../images/twoMushrooms.svg";
 import Why from "./why.md";
 ---
 
@@ -11,12 +12,15 @@ import Why from "./why.md";
         <img src={headline} alt="Loam helps you build ambitious dapps." />
       </h2>
       <section class="intro">
-        <p>
-          Focus on the important parts of your <a href="https://soroban.stellar.org/">Soroban</a> app. Let Loam handle the tedious bits.
-        </p>
-        <p>
-          Made by Limus Vita.
-        </p>
+        <div>
+          <p>
+            Focus on the important parts of your <a href="https://soroban.stellar.org/">Soroban</a> app. Let Loam handle the tedious bits.
+          </p>
+          <p>
+            Made by Limus Vita.
+          </p>
+        </div>
+        <img src={twoMushrooms} alt="" />
       </section>
     </div>
     <section>
@@ -47,21 +51,20 @@ import Why from "./why.md";
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
   }
 
   .intro {
-    --img-height: 427px;
-    --img-width: 168px;
-    background-image: url(../images/twoMushrooms.svg);
-    background-position: top right;
-    background-size: calc(min(20%, var(--img-width)));
-    background-repeat: no-repeat;
-    flex: 1;
     width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
   }
-  .intro p {
+  .intro img {
+    width: calc(min(20%, 168px));
+  }
+  .intro div {
     width: 66%;
     max-width: 18em;
   }
