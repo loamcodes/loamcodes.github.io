@@ -1,20 +1,26 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import headline from "../images/headline.svg";
+import Why from "./why.md";
 ---
 
 <Layout title="Loam | Grow Ambitious Dapps">
   <main>
-    <h2>
-      <img src={headline} alt="Loam helps you build ambitious dapps." />
-    </h2>
+    <div class="banner">
+      <h2>
+        <img src={headline} alt="Loam helps you build ambitious dapps." />
+      </h2>
+      <section class="intro">
+        <p>
+          Focus on the important parts of your <a href="https://soroban.stellar.org/">Soroban</a> app. Let Loam handle the tedious bits.
+        </p>
+        <p>
+          Made by Limus Vita.
+        </p>
+      </section>
+    </div>
     <section>
-      <p>
-        Focus on the important parts of your <a href="https://soroban.stellar.org/">Soroban</a> app. Let Loam handle the tedious bits.
-      </p>
-      <p>
-        Made by Limus Vita.
-      </p>
+      <Why />
     </section>
   </main>
 </Layout>
@@ -23,7 +29,7 @@ import headline from "../images/headline.svg";
   main {
     margin: auto;
     padding: 0 1.25rem;
-    max-width: 80ch;
+    max-width: 50ch;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -36,7 +42,16 @@ import headline from "../images/headline.svg";
     max-width: 100%;
   }
 
-  section {
+  .banner {
+    color: var(--yellow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .intro {
     --img-height: 427px;
     --img-width: 168px;
     background-image: url(../images/twoMushrooms.svg);
@@ -44,8 +59,9 @@ import headline from "../images/headline.svg";
     background-size: calc(min(20%, var(--img-width)));
     background-repeat: no-repeat;
     flex: 1;
+    width: 100%;
   }
-  section p {
+  .intro p {
     width: 66%;
     max-width: 18em;
   }
