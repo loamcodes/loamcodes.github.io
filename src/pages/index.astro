@@ -38,9 +38,11 @@ import github from "../images/github.svg";
           <img src={twoMushrooms} alt="" />
         </div>
       </div>
-      <a href="https://github.com/loambuild/loam-sdk" class="button"
-        >Get Started</a
-      >
+      <div class="cta">
+        <a href="https://github.com/loambuild/loam-sdk" class="button"
+          >Get Started</a
+        >
+      </div>
     </div>
     <section>
       <div class="container">
@@ -77,7 +79,6 @@ import github from "../images/github.svg";
     height: 100vh;
     position: fixed;
     top: 0;
-    z-index: -1;
   }
   .banner > .container {
     display: flex;
@@ -131,25 +132,27 @@ import github from "../images/github.svg";
   .intro > div p:first-child {
     margin-top: 4rem;
   }
-  .button {
+  .cta {
+    bottom: 6em;
     position: absolute;
-    left: 50%;
-    bottom: 5em;
-    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
   }
   @media (min-width: 550px) {
-    .button {
-      bottom: 0.5em;
+    .cta {
+      bottom: 1.5em;
     }
   }
-  section:first-of-type {
+  main > section:first-of-type {
     margin-top: 100vh;
     background: var(--black);
   }
-  section {
+  main > section {
     padding: 1.5rem;
+    position: relative;
+    z-index: 1;
   }
-  section:after {
+  main > section:after {
     content: "";
     display: table;
     clear: both;
