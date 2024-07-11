@@ -1,8 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import headline from "../images/headline.svg";
+import oneMushroom from "../images/oneMushroom.svg";
 import twoMushrooms from "../images/twoMushrooms.svg";
-import Why from "./why.md";
+import headline from "../images/headline.svg";
+import HighLevel from "./high-level.md";
+import AboutSdk from "./about-sdk.md";
 import logo from "../images/LogoWDropShadow.svg";
 import github from "../images/github.svg";
 ---
@@ -20,7 +22,7 @@ import github from "../images/github.svg";
           <img src={logo} alt="LOAM" />
         </h1>
         <h2>
-          <span>Loam helps you build ambitious dapps.</span>
+          <img src={headline} alt="Loam helps you grow ambitious dapps." />
         </h2>
         <div class="intro">
           <div>
@@ -46,7 +48,19 @@ import github from "../images/github.svg";
     </div>
     <section>
       <div class="container">
-        <Why />
+        <div class="columns">
+          <img src={oneMushroom} alt="" />
+          <div>
+            <HighLevel />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="columns">
+          <AboutSdk />
+        </div>
       </div>
     </section>
   </main>
@@ -85,6 +99,9 @@ import github from "../images/github.svg";
     flex-direction: column;
     align-items: center;
     height: 100%;
+    margin: auto;
+    padding: 0 1.25rem;
+    max-width: 75ch;
   }
   .banner > .container > h1,
   .banner > .container > h2 {
@@ -107,9 +124,11 @@ import github from "../images/github.svg";
     font-size: 3em;
     text-align: center;
     max-width: 10em;
+    max-width: 100%;
   }
-  h2 span {
+  h2 img {
     height: 75%;
+    width: 100%;
   }
 
   .intro {
@@ -140,25 +159,48 @@ import github from "../images/github.svg";
   }
   @media (min-width: 550px) {
     .cta {
-      bottom: 1.5em;
+      bottom: 2em;
     }
   }
   main > section:first-of-type {
     margin-top: 100vh;
-    background: var(--black);
+  }
+  main > section:nth-child(2n) {
+    --bg: var(--black);
+    --fg: var(--white);
+    --heading: var(--yellow);
+    --link: var(--light-green);
+  }
+  main > section:nth-child(2n + 1) {
+    --bg: var(--lavendar);
+    --fg: var(--black);
+    --heading: var(--dark-green);
+    --link: var(--maroon);
   }
   main > section {
-    padding: 1.5rem;
     position: relative;
     z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    background: var(--bg);
+    color: var(--fg);
   }
-  main > section:after {
+  main > section a {
+    color: var(--link);
+  }
+  main > section h1,
+  main > section h2 {
+    color: var(--heading);
+  }
+  main > section:last-child:after {
     content: "";
     display: table;
     clear: both;
     display: absolute;
     top: 100%;
     height: 50em;
-    background: var(--black);
+    background: var(--bg);
   }
 </style>
