@@ -1,15 +1,15 @@
-## Why Build With Loam?
+## An all-in-one solution
 
 Loam powers full-stack smart contract authoring and interaction. You can think of it as the "Ruby on Rails of decentralized apps."
 
-### 1. Loam SDK
+### 1. SDK
 
-Create smart contracts using smaller, more flexible building blocks called "subcontracts". All Loam contracts have safety, upgradeability, and composability baked into their core design.
+Create smart contracts using small, flexible building blocks called "subcontracts" with [Loam SDK](https://crates.io/crates/loam-sdk).
 
-### 2. Loam Frontend
+### 2. CLI
 
-An opinionated modern frontend toolchain paired with declarative environment configuration to help you progress from local development and testing to staging and finally to a production app backed by a live blockchain network.
+Command line interface built by the team that maintains the [Soroban CLI](https://github.com/stellar/soroban-cli). Create, build, deploy, and manage both contracts and frontend projects with ease. Get started with `cargo install loam-cli`.
 
-### 3. Loam CLI
+### 3. Frontend
 
-A command line interface built by the same team that maintains the official [Soroban CLI](https://github.com/stellar/soroban-cli). A powerful and easy-to-use companion to both the SDK and Frontend.
+Opinionated, modern frontend toolchain with declarative environment configuration to guide you from local development and testing, to staging, and finally to a production app backed by a live blockchain network.
