@@ -1,10 +1,10 @@
 &nbsp;
 
-## composable, upgradeable & secure
+## Smart Contracts Simplified
 
 ### Composable
 
-With [Loam SDK](https://crates.io/crates/loam-sdk), you compose your smart contract from many sub contracts. Subcontracts are like lego blocks that you can either use off-the-shelf from the open source ecosystem or that you can build yourself. A single Loam smart contract is composed of one or more subcontracts.
+With [Loam SDK](https://crates.io/crates/loam-sdk), you compose your smart contract from many *sub* contracts. Subcontracts are like lego blocks that you can either use off-the-shelf from the open source ecosystem or that you can build yourself. A single Loam smart contract is composed of one or more subcontracts.
 
 ### Upgradeable
 
