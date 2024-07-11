@@ -10,6 +10,11 @@ import github from "../images/github.svg";
 <Layout title="Loam | Grow Ambitious Dapps">
   <main>
     <div class="banner">
+      <nav>
+        <a href="https://github.com/loambuild">
+          <img src={github} alt="GitHub" />
+        </a>
+      </nav>
       <div class="container">
         <h1>
           <img src={logo} alt="LOAM" />
@@ -38,12 +43,31 @@ import github from "../images/github.svg";
       >
     </div>
     <section>
-      <Why />
+      <div class="container">
+        <Why />
+      </div>
     </section>
   </main>
 </Layout>
 
 <style>
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    overflow: visible;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav img {
+    height: 1em;
+  }
+  nav a {
+    opacity: 0.4;
+    margin-left: 0.75em;
+    border-bottom: 1px solid transparent;
+  }
   .banner {
     background-image: url(../images/mycelium.png);
     background-size: calc(max(100%, 1920px)) 100%;
