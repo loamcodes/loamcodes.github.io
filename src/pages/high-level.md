@@ -10,7 +10,7 @@ Create smart contracts using small, flexible building blocks called "subcontract
 
 Command line interface built by the team that maintains the [Soroban CLI](https://github.com/stellar/soroban-cli). Create, build, deploy, and manage both contracts and frontend projects. Get started with `cargo install loam-cli`.
 
-### 3. Deployments
+### 3. Deploy
 
 A package manager for publishing versioned Wasm binaries, a contract registry to give your contracts names, and an expiration tracker to keep your data live.
 
