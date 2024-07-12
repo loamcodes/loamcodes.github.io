@@ -6,7 +6,7 @@
 
 `cargo install loam-cli`
 
-### Start a project
+### Start something
 
 `loam init my-loam-project`
 
@@ -16,4 +16,4 @@
 
 ### Declarative environments
 
-Describe your network, accounts, and contracts in the `environments.toml` file, let Loam handle the rest.
+Describe your network, accounts, and contracts in `environments.toml`, let `loam dev` keep everything up-to-date as you edit your contracts.
