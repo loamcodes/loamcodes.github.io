@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import oneMushroom from "../images/oneMushroom.svg";
 import twoMushrooms from "../images/twoMushrooms.svg";
 import dandelionSeeds from "../images/dandelionSeeds.svg";
+import flowers from "../images/flowers.svg";
 import headline from "../images/headline.svg";
 import HighLevel from "./high-level.md";
 import AboutSdk from "./about-sdk.md";
@@ -87,7 +88,10 @@ import github from "../images/github.svg";
     <section>
       <div class="container">
         <div class="columns">
-          <AboutFrontend />
+          <img src={flowers} alt="" />
+          <div>
+            <AboutFrontend />
+          </div>
         </div>
       </div>
     </section>
