@@ -12,7 +12,7 @@ Command line interface built by the team that maintains the [Soroban CLI](https:
 
 ### 3. Smart Contracts
 
-A package manager for publishing versioned Wasm binaries; a contract registry which lets you deploy contracts and claim a named associated with its contract id; and a contract expiration tracker which will ensures that contracts won't expiration.
+A package manager for publishing versioned Wasm binaries; a contract registry which lets you deploy contracts and claim a named associated with its contract id; and a contract expiration tracker that keeps your data live. 
 
 ### 4. Frontend
 
