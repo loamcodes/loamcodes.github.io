@@ -8,7 +8,7 @@ Create smart contracts using small, flexible building blocks called "subcontract
 
 ### 2. CLI
 
-Command line interface built by the team that maintains the [Soroban CLI](https://github.com/stellar/soroban-cli). Create, build, deploy, and manage both contracts and frontend projects. Get started with `cargo install loam-cli`.
+Command line interface built by the team that maintains the [Stellar CLI](https://github.com/stellar/stellar-cli). Create, build, deploy, and manage both contracts and frontend projects. Get started with `cargo install loam-cli`.
 
 ### 3. Deploy
 
@@ -16,4 +16,4 @@ A package manager for publishing versioned Wasm binaries, a contract registry to
 
 ### 4. Frontend
 
-Opinionated, modern frontend toolchain with declarative environment configuration to guide you from local development and testing, to staging, and finally to a production app backed by a live blockchain network.
+Opinionated, modern frontend toolchain with declarative environment configuration. From local dev and testing, to staging, to a production app—Loam has you covered.
