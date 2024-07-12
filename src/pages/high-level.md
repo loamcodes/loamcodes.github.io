@@ -12,7 +12,7 @@ Command line interface built by the team that maintains the [Stellar CLI](https:
 
 ### 3. Deploy
 
-A package manager for publishing versioned Wasm binaries, a contract registry to give your contracts names, and an expiration tracker to keep your data live.
+A package manager for publishing versioned Wasm binaries, a contract registry to deploy named contracts, and an expiration tracker to keep your data live.
 
 ### 4. Frontend
 
