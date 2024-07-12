@@ -1,6 +1,6 @@
 &nbsp;
 
-## Smart Contracts Simplified
+## Smart Contracts, Simplified
 
 ### Composable
 
