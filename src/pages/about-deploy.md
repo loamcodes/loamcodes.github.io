@@ -10,7 +10,7 @@ Hashes are cool, but you know what's cooler? Names and versions. Version your ow
 
 ### Contract Registry
 
-Give your contracts names! Use contracts by name. Our dream for the future? No more opaque contract IDs.
+Give your contracts names! And use others' contracts by name. Our dream for the future? No more opaque contract IDs.
 
 ### Keep it live
 
