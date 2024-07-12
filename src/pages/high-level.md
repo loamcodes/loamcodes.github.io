@@ -10,7 +10,7 @@ Create smart contracts using small, flexible building blocks called "subcontract
 
 Command line interface built by the team that maintains the [Stellar CLI](https://github.com/stellar/stellar-cli). Create, build, deploy, and manage both contracts and frontend projects. Get started with `cargo install loam-cli`.
 
-### 3. Deploy
+### 3. Contract Lifetime Management
 
 A package manager for publishing versioned Wasm binaries, a contract registry to deploy named contracts, and an expiration tracker to keep your data live.
 
