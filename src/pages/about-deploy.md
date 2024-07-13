@@ -2,7 +2,7 @@
 
 ### Universal Factory Contract
 
-Loam's simple, stateless factory contract simplifies deploying & initializing contracts in a single step. Never write your own factory contracts again.
+Have you deployed contracts? And initialized them? In one transaction? Not fun! Loam CLI paired with our stateless deployer contract makes it easy.
 
 ### Wasm Package Manager
 
