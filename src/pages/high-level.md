@@ -1,6 +1,6 @@
 ## An all-in-one solution
 
-Loam powers full-stack smart contract authoring and interaction. You can think of it as the "Ruby on Rails of decentralized apps."
+Loam powers full-stack smart contract authoring and interaction using a convention-over-configuration approach.
 
 ### 1. SDK
 
